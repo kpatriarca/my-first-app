@@ -1,0 +1,70 @@
+<main class="resume">
+  <div class="portfolio-card">
+
+    <header class="intro">
+
+    <div class="intro-details">
+      <h1>{{ fullName }}</h1>
+
+      <p>
+        {{ location }} |
+        {{ phone }} |
+        <a [href]="'mailto:' + email">{{ email }}</a>
+      </p>
+    </div>
+
+    <div class="intro-logo">
+      <img src="/logo1.png" alt="Personal Logo">
+    </div>
+
+  </header>
+
+    <section>
+      <h2>Personal Profile</h2>
+      <p>{{ profile }}</p>
+    </section>
+
+    <app-profile-card></app-profile-card>
+
+    <section>
+      <h2>Technical Stack</h2>
+
+      <ul>
+        @for (skill of skills; track skill) {
+          <li>{{ skill }}</li>
+        }
+      </ul>
+    </section>
+
+    <section>
+      <h2>Soft Skills</h2>
+
+      <ul>
+        @for (skill of softskills; track skill) {
+          <li>{{ skill }}</li>
+        }
+      </ul>
+    </section>
+
+    <section>
+      <h2>What I Do Best</h2>
+
+      <ul>
+        @for (skill of dobest; track skill) {
+          <li>{{ skill }}</li>
+        }
+      </ul>
+    </section>
+
+    <section class="interaction">
+      <h2>Angular Interaction</h2>
+
+      <p>{{ message }}</p>
+
+      <button (click)="showMessage()">
+        Click Me
+      </button>
+    </section>
+
+  </div>
+</main>

@@ -1,0 +1,169 @@
+* {
+  box-sizing: border-box;
+  background-color: rgb(216, 206, 206);
+}
+
+body {
+  margin: 0;
+  background: rgb(216, 206, 206);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.resume {
+  min-height: 100vh;
+  padding: 35px 20px;
+  color: #252525;
+  line-height: 1.7;
+}
+
+.portfolio-card {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 35px;
+  background: rgb(216, 206, 206);
+  border: 1px solid #d7def0;
+  border-radius: 22px;
+  box-shadow: 0 8px 25px rgba(20, 40, 90, 0.12);
+}
+
+.intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+
+  border-bottom: 1px solid #cccccc;
+  padding-bottom: 22px;
+  margin-bottom: 28px;
+}
+
+/* Left Side */
+.intro-details {
+  flex: 1;
+  text-align: left;
+}
+
+.intro-details h1 {
+  margin: 0 0 8px;
+  color: #11245e;
+  font-size: 2rem;
+}
+
+.intro-details p {
+  color: #555555;
+  overflow-wrap: anywhere;
+}
+
+.intro-details a {
+  color: #004cff;
+}
+
+.intro-logo {
+  width: 130px;
+  height: 130px;
+  flex-shrink: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-logo img {
+  width: 150px;
+  height: 150px;
+  margin-right: 150px;
+  object-fit: contain;
+}
+
+.intro h1 {
+  margin-bottom: 4px;
+  color: #11245e;
+  font-size: 2rem;
+}
+
+.intro p {
+  color: #555555;
+  overflow-wrap: anywhere;
+}
+
+.intro a {
+  color: #004cff;
+}
+
+section {
+  margin: 26px 0;
+}
+
+section h2 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #11245e;
+  border-bottom: 1px solid #aaaaaa;
+  padding-bottom: 7px;
+  text-transform: uppercase;
+  font-size: 1.15rem;
+}
+
+section p {
+  font-size: 0.95rem;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px 24px;
+  padding-left: 22px;
+}
+
+li {
+  font-size: 0.95rem;
+}
+
+app-profile-card {
+  display: block;
+  margin: 25px 0;
+}
+
+.interaction {
+  margin-bottom: 0;
+}
+
+button {
+  border: 0;
+  border-radius: 6px;
+  padding: 10px 18px;
+  background: #11245e;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #244c9c;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+  .resume {
+    padding: 15px 10px;
+  }
+
+  .portfolio-card {
+    padding: 20px;
+    border-radius: 15px;
+  }
+
+  .intro h1 {
+    font-size: 1.5rem;
+  }
+
+  ul {
+    grid-template-columns: 1fr;
+  }
+
+  section h2 {
+    font-size: 1rem;
+  }
+}
